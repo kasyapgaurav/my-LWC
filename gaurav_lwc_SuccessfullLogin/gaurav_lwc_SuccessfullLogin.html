@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-box slds-theme_shade slds-theme_alert-texture">
+        <div>
+            <h1>Welcome to Demo Application.</h1>
+        </div>
+        <div class="slds-float_right custom-margin-top">
+            <lightning-button variant="destructive" label="Logout" title="Logout" onclick={handleLogout}></lightning-button>
+        </div>
+    </div>
+   <br/>
+    <lightning-card  variant="Narrow">
+       <h1> Welcome {userDetails.fullName}</h1>
+       <div> Email : {userDetails.email}</div>
+       <div> User name : {userDetails.username}</div>
+    </lightning-card>
+</template>

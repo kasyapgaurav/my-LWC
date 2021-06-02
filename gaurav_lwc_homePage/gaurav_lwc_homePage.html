@@ -1,0 +1,16 @@
+<template>
+
+    <div class="slds-box slds-size_1-of-2 slds-align_absolute-center">
+        <lightning-card title="Login Form">
+            <lightning-input type="text" name="username" label="User Name" placeholder="Enter user name"></lightning-input>
+            <lightning-input type="password" name="password" label="Password" placeholder="Enter password"></lightning-input>
+            <br/>
+            <div class="slds-align_absolute-center">
+                <lightning-button variant="brand" label="Login" title="Login" onclick={handleLogin} class="slds-p-right_medium"></lightning-button>
+                <lightning-button variant="netural" label="Reset" title="Reset" onclick={handleReset}></lightning-button>
+            </div>
+            
+        </lightning-card>
+    </div>
+    
+</template>

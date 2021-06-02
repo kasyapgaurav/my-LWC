@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-box slds-theme_shade slds-theme_alert-texture">
+        <div>
+            <h1>Welcome to Demo Application.</h1>
+        </div>
+        <div class="slds-float_right custom-margin-top">
+            <lightning-button variant="brand" label="Login" title="Login" onclick={handlelBaseNavigation}></lightning-button>
+        </div>
+    </div>
+    <br/>
+    <lightning-card>
+        <div class="slds-box slds-align_absolute-center">
+            <lightning-card  title="New User Registration">
+                <lightning-input type="text" variant="standard" name="First-Name" label="First Name" placeholder="Enter First Name"></lightning-input>
+                <lightning-input type="text" variant="standard" name="Last-Name" label="Last Name" placeholder="Enter Last Name"></lightning-input>
+                <lightning-input type="email" variant="standard" name="Email" label="Email" placeholder="Enter Email" value={email} onchange={changeHandlerEmail}></lightning-input>
+                <lightning-input type="text" variant="standard" name="UserName" label="User Name" disabled value={username}></lightning-input>
+                <lightning-input type="password" variant="standard" name="Password" label="Password" placeholder="Enter your desired Password"></lightning-input>
+                <br/>
+                <div class="slds-align_absolute-center">
+                    <lightning-button variant="brand" label="Register" title="Register" onclick={handleRegister} class="slds-p-right_medium"></lightning-button>
+                    <lightning-button variant="netural" label="Reset" title="Reset" onclick={handleReset}></lightning-button>
+                </div>
+            </lightning-card>
+        </div>
+    </lightning-card>
+</template>
